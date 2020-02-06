@@ -9,8 +9,8 @@ fi
 # initialize git
 remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 git config http.sslVerify false
-git config user.name "Automated Publisher"
-git config user.email "actions@users.noreply.github.com"
+git config user.name "SCSS Builder"
+git config user.email "33466216+Vortetty@users.noreply.github.com"
 git remote add publisher "${remote_repo}"
 git show-ref # useful for debugging
 git branch --verbose
