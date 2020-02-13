@@ -22,6 +22,6 @@ git lfs install
 git checkout master
 git add -A
 timestamp=$(date -u)
-git commit -m 'Changed all instances of "litecoin" to "maillecoin"' || exit 0
+git commit -m 'Changed all instances of "bitcoin" to "maillecoin"' || exit 0
 git pull --rebase publisher master
 git push publisher master
