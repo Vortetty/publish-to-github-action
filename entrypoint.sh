@@ -9,7 +9,7 @@ fi
 # initialize git
 remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 git config http.sslVerify false
-git config user.name "SCSS Builder"
+git config user.name "Replacer"
 git config user.email "33466216+Vortetty@users.noreply.github.com"
 git remote add publisher "${remote_repo}"
 git show-ref # useful for debugging
@@ -22,6 +22,6 @@ git lfs install
 git checkout master
 git add -A
 timestamp=$(date -u)
-git commit -m "SCSS Built to CSS" || exit 0
+git commit -m 'Changed all instances of "litecoin" to "maillecoin"' || exit 0
 git pull --rebase publisher master
 git push publisher master
